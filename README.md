@@ -41,7 +41,7 @@
 
    ```sh
       git clone https://github.com/renupriya20/OIBSIP
-      cd pizza-palette-app-mern-OIBSIP-task-1
+    
    ```
 
 2. **Install dependencies**
@@ -138,32 +138,7 @@ Don't forget to give the project a star! Thanks again!
 5. Push to the branch (`git push origin feature/AmazingFeature`)
 6. Open a pull request
 
-## Contact
 
-- Twitter: [@itxSaaad](https://twitter.com/itxSaaad)
-- LinkedIn: [@itxSaaad](https://www.linkedin.com/in/itxsaaad/)
-- Portfolio: [Muhammad Saad Faisal](https://codesbysaaad.tech/)
-- Email: [saadstudent.cs@gmail.com](mailto:saadstudent.cs@gmail.com)
 
-## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
 
-## Support
-
-Give ⭐️ if you like this project!
-
-<a href="https://www.buymeacoffee.com/itxSaaad"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="200" /></a>
-
-<!-- MARKDOWN LINKS & IMAGES -->
-
-[contributors-shield]: https://img.shields.io/github/contributors/itxsaaad/pizza-palette-app-mern-OIBSIP-task-1.svg?style=for-the-badge
-[contributors-url]: https://github.com/itxsaaad/pizza-palette-app-mern-OIBSIP-task-1/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/itxsaaad/pizza-palette-app-mern-OIBSIP-task-1.svg?style=for-the-badge
-[forks-url]: https://github.com/itxsaaad/pizza-palette-app-mern-OIBSIP-task-1/network/members
-[stars-shield]: https://img.shields.io/github/stars/itxsaaad/pizza-palette-app-mern-OIBSIP-task-1.svg?style=for-the-badge
-[stars-url]: https://github.com/itxsaaad/pizza-palette-app-mern-OIBSIP-task-1/stargazers
-[issues-shield]: https://img.shields.io/github/issues/itxsaaad/pizza-palette-app-mern-OIBSIP-task-1.svg?style=for-the-badge
-[issues-url]: https://github.com/itxsaaad/pizza-palette-app-mern-OIBSIP-task-1/issues
-[license-shield]: https://img.shields.io/github/license/itxsaaad/pizza-palette-app-mern-OIBSIP-task-1.svg?style=for-the-badge
-[license-url]: https://github.com/itxsaaad/pizza-palette-app-mern-OIBSIP-task-1/blob/main/LICENSE.md
