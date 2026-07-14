@@ -2,31 +2,9 @@
 
 > Pizza Delivery System App (MERN - MongoDB, Express, React, Node.js) is a comprehensive web application that enables users to customize and order pizzas online. This project showcases a full-stack development approach with a focus on user experience, functionality, and security. The app includes a user-friendly frontend interface for ordering pizzas, an admin dashboard for managing orders and inventory, and a secure backend server for processing orders and payments.
 
-<br />
-<div align="center">
-  <p align="center">
-    <br />
-    <a href="https://github.com/itxSaaad/pizza-palette-app-mern-OIBSIP-task-1">
-    <strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://pizza-palette-app-mern.vercel.app/">View Demo</a>
-    ·
-    <a href="https://github.com/itxSaaad/pizza-palette-app-mern-OIBSIP-task-1/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/itxSaaad/pizza-palette-app-mern-OIBSIP-task-1/issues">Request Feature</a>
-  </p>
-</div>
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
 
-## Live Preview Project
 
-[Live Preview](https://pizza-palette-app-mern.vercel.app/)
 
 ## Features
 
@@ -62,7 +40,7 @@
 1. **Clone the repository**
 
    ```sh
-      git clone https://github.com/itxSaaad/pizza-palette-app-mern-OIBSIP-task-1.git
+      git clone https://github.com/renupriya20/OIBSIP
       cd pizza-palette-app-mern-OIBSIP-task-1
    ```
 
