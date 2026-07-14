@@ -2,10 +2,13 @@
 
 > Pizza Delivery System App (MERN - MongoDB, Express, React, Node.js) is a comprehensive web application that enables users to customize and order pizzas online. This project showcases a full-stack development approach with a focus on user experience, functionality, and security. The app includes a user-friendly frontend interface for ordering pizzas, an admin dashboard for managing orders and inventory, and a secure backend server for processing orders and payments.
 
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> 1ffe1ce (update)
 ## Features
 
 - **User & Admin Authentication:** Secure login and registration system with role-based access control for users and administrators.
@@ -40,8 +43,13 @@
 1. **Clone the repository**
 
    ```sh
+<<<<<<< HEAD
       git clone https://github.com/renupriya20/OIBSIP
     
+=======
+     git clone https://github.com/renupriya20/OIBSIP
+     
+>>>>>>> 1ffe1ce (update)
    ```
 
 2. **Install dependencies**
@@ -136,9 +144,13 @@ Don't forget to give the project a star! Thanks again!
 3. Create your feature branch (`git checkout -b feature/AmazingFeature`)
 4. Commit your changes (`git commit -m "Add some AmazingFeature"`)
 5. Push to the branch (`git push origin feature/AmazingFeature`)
+<<<<<<< HEAD
 6. Open a pull request
 
 
 
 
 
+=======
+6. Open a pull request 
+>>>>>>> 1ffe1ce (update)
