@@ -1,21 +1,21 @@
 // Import required packages
-const colors = require('colors');
-const cors = require('cors');
-const dotenv = require('dotenv');
-const express = require('express');
-const morgan = require('morgan');
-const bodyParser = require('body-parser');
+import colors from 'colors';
+import cors from 'cors';
+import dotenv from 'dotenv';
+import express from 'express';
+import morgan from 'morgan';
+import bodyParser from 'body-parser';
 
 // Import Configs and Middlewares
-const connectDb = require('./config/db');
-const { notFound, errorHandler } = require('./middlewares/errorMiddlewares');
+import connectDb from './config/db.js';
+import { notFound, errorHandler } from './middlewares/errorMiddlewares.js';
 
 // Import Routes
-const adminUserRoutes = require('./routes/adminUserRoutes');
-const userRoutes = require('./routes/userRoutes');
-const pizzaRoutes = require('./routes/pizzaRoutes');
-const orderRoutes = require('./routes/orderRoutes');
-const inventoryRoutes = require('./routes/inventoryRoutes');
+import adminUserRoutes from './routes/adminUserRoutes.js';
+import userRoutes from './routes/userRoutes.js';
+import pizzaRoutes from './routes/pizzaRoutes.js';
+import orderRoutes from './routes/orderRoutes.js';
+import inventoryRoutes from './routes/inventoryRoutes.js';
 
 // Configure DotEnv
 dotenv.config();

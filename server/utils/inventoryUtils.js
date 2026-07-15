@@ -1,5 +1,5 @@
 // Import Schema
-const { Base, Sauce, Cheese, Veggie } = require('../schemas/inventorySchema');
+import { Base, Sauce, Cheese, Veggie } from '../schemas/inventorySchema.js';
 
 // Update inventory quantity for a given item
 const updateInventoryQuantity = async (pizza, qty) => {
@@ -45,4 +45,4 @@ const updateInventoryQuantity = async (pizza, qty) => {
   }
 };
 
-module.exports = { updateInventoryQuantity };
+export { updateInventoryQuantity };

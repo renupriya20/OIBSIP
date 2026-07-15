@@ -1,6 +1,6 @@
-const nodemailer = require('nodemailer');
-const dotenv = require('dotenv');
-const emailBaseTemplate = require('../utils/emailBaseTemplate');
+import nodemailer from 'nodemailer';
+import dotenv from 'dotenv';
+import emailBaseTemplate from '../utils/emailBaseTemplate.js';
 
 dotenv.config();
 
@@ -38,4 +38,4 @@ const sendEmail = async ({ to, subject, templateOptions = {}, from, text }) => {
   }
 };
 
-module.exports = sendEmail;
+export default sendEmail;

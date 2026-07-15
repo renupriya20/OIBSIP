@@ -1,7 +1,7 @@
-const asyncHandler = require('express-async-handler');
+import asyncHandler from 'express-async-handler';
 
 // Import Schemas
-const { Base, Sauce, Cheese, Veggie } = require('../schemas/inventorySchema');
+import { Base, Sauce, Cheese, Veggie } from '../schemas/inventorySchema.js';
 
 // Initialize Controllers
 
@@ -218,7 +218,7 @@ const deleteStockById = asyncHandler(async (req, res) => {
 });
 
 // Export Controllers
-module.exports = {
+export {
   getAllStocks,
   getStockById,
   createStock,

@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 const pizzaSchema = new mongoose.Schema(
   {
@@ -58,4 +58,4 @@ const pizzaSchema = new mongoose.Schema(
   }
 );
 
-module.exports = mongoose.model('Pizza', pizzaSchema);
+export default mongoose.model('Pizza', pizzaSchema);

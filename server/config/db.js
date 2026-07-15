@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 // Establish connection to the MongoDB database
 const connectDb = async () => {
@@ -17,4 +17,4 @@ const connectDb = async () => {
   }
 };
 
-module.exports = connectDb;
+export default connectDb;

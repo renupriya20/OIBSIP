@@ -1,19 +1,19 @@
-const express = require('express');
+import express from 'express';
 
 // Initialize Express Router
 const router = express.Router();
 
 // Import Middlewares
-const { protect, admin } = require('../middlewares/authMiddlewares');
+import { protect, admin } from '../middlewares/authMiddlewares.js';
 
 // Import Controllers
-const {
+import {
   getAllStocks,
   getStockById,
   createStock,
   updateStockById,
   deleteStockById,
-} = require('../controllers/inventoryControllers');
+} from '../controllers/inventoryControllers.js';
 
 // Initialize Routes
 
@@ -31,4 +31,4 @@ router
   .delete(protect, admin, deleteStockById);
 
 // Export Router
-module.exports = router;
+export default router;

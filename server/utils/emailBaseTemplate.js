@@ -181,11 +181,10 @@ function emailBaseTemplate({
                     </div>
                     
                     <!-- Title -->
-                    ${
-                      title
-                        ? `<h1 class="main-title" style="margin: 1rem 0 0 0; color: #ffffff; font-size: 1.8rem; font-weight: 700; letter-spacing: 0.3px; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">${title}</h1>`
-                        : ''
-                    }
+                    ${title
+      ? `<h1 class="main-title" style="margin: 1rem 0 0 0; color: #ffffff; font-size: 1.8rem; font-weight: 700; letter-spacing: 0.3px; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">${title}</h1>`
+      : ''
+    }
                     
                   </td>
                 </tr>
@@ -197,23 +196,20 @@ function emailBaseTemplate({
                   <td class="main-content email-body" style="padding: 2.5rem 2.5rem 2rem 2.5rem; background-color: #ffffff;">
                     
                     <!-- Greeting -->
-                    ${
-                      greeting
-                        ? `<p class="greeting text-color" style="font-size: 1.15rem; margin: 0 0 1.5rem 0; font-weight: 600; color: #1a1a1a; line-height: 1.4;">${greeting}</p>`
-                        : ''
-                    }
+                    ${greeting
+      ? `<p class="greeting text-color" style="font-size: 1.15rem; margin: 0 0 1.5rem 0; font-weight: 600; color: #1a1a1a; line-height: 1.4;">${greeting}</p>`
+      : ''
+    }
                     
                     <!-- Message -->
-                    ${
-                      message
-                        ? `<p class="message-text secondary-text" style="margin: 0 0 2rem 0; font-size: 1.05rem; color: #4a5568; line-height: 1.7;">${message}</p>`
-                        : ''
-                    }
+                    ${message
+      ? `<p class="message-text secondary-text" style="margin: 0 0 2rem 0; font-size: 1.05rem; color: #4a5568; line-height: 1.7;">${message}</p>`
+      : ''
+    }
                     
                     <!-- Action Button -->
-                    ${
-                      actionText && actionUrl
-                        ? `
+                    ${actionText && actionUrl
+      ? `
                       <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin: 2rem 0;">
                         <tr>
                           <td style="text-align: center;">
@@ -231,8 +227,8 @@ function emailBaseTemplate({
                         </tr>
                       </table>
                     `
-                        : ''
-                    }
+      : ''
+    }
                     
                     <!-- Extra Content -->
                     ${extra ? `<div style="margin: 2rem 0 1rem 0;">${extra}</div>` : ''}
@@ -275,4 +271,4 @@ function emailBaseTemplate({
   `;
 }
 
-module.exports = emailBaseTemplate;
+export default emailBaseTemplate;

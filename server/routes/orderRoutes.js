@@ -1,13 +1,13 @@
-const express = require('express');
+import express from 'express';
 
 // Initialize Express Router
 const router = express.Router();
 
 // Import Middlewares
-const { protect, admin } = require('../middlewares/authMiddlewares');
+import { protect, admin } from '../middlewares/authMiddlewares.js';
 
 // Import Controllers
-const {
+import {
   createOrder,
   createRazorpayOrder,
   getOrdersByUserId,
@@ -15,7 +15,7 @@ const {
   getOrderById,
   updateOrderById,
   deleteOrderById,
-} = require('../controllers/orderControllers');
+} from '../controllers/orderControllers.js';
 
 // Initialize Routes
 
@@ -35,4 +35,4 @@ router
   .delete(protect, admin, deleteOrderById);
 
 // Export Router
-module.exports = router;
+export default router;

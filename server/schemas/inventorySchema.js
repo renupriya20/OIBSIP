@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 const baseSchema = new mongoose.Schema(
   {
@@ -48,9 +48,9 @@ const veggieSchema = new mongoose.Schema(
   }
 );
 
-module.exports = {
-  Base: mongoose.model('Base', baseSchema),
-  Sauce: mongoose.model('Sauce', sauceSchema),
-  Cheese: mongoose.model('Cheese', cheeseSchema),
-  Veggie: mongoose.model('Veggie', veggieSchema),
-};
+const Base = mongoose.model('Base', baseSchema);
+const Sauce = mongoose.model('Sauce', sauceSchema);
+const Cheese = mongoose.model('Cheese', cheeseSchema);
+const Veggie = mongoose.model('Veggie', veggieSchema);
+
+export { Base, Sauce, Cheese, Veggie };

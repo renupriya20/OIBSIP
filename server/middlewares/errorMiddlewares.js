@@ -20,4 +20,4 @@ const errorHandler = (err, req, res, next) => {
   res.json(response); // Send JSON response
 };
 
-module.exports = { notFound, errorHandler };
+export { notFound, errorHandler };

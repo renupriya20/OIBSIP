@@ -1,13 +1,13 @@
-const express = require('express');
+import express from 'express';
 
 // Initialize Express Router
 const router = express.Router();
 
 // Import Middlewares
-const { protect, admin } = require('../middlewares/authMiddlewares');
+import { protect, admin } from '../middlewares/authMiddlewares.js';
 
 // Import Controllers
-const {
+import {
   authAdmin,
   registerAdmin,
   getAdminProfile,
@@ -16,7 +16,7 @@ const {
   getAdminById,
   updateAdminById,
   deleteAdminById,
-} = require('../controllers/adminUserControllers');
+} from '../controllers/adminUserControllers.js';
 
 // Initialize Routes
 
@@ -39,4 +39,4 @@ router
   .delete(protect, admin, deleteAdminById);
 
 // Export Router
-module.exports = router;
+export default router;

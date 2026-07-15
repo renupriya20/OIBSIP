@@ -1,8 +1,8 @@
-const jwt = require('jsonwebtoken');
-const asyncHandler = require('express-async-handler');
+import jwt from 'jsonwebtoken';
+import asyncHandler from 'express-async-handler';
 
-const User = require('../schemas/userSchema');
-const Admin = require('../schemas/adminUserSchema');
+import User from '../schemas/userSchema.js';
+import Admin from '../schemas/adminUserSchema.js';
 
 // Middleware to protect routes - checks for a valid JWT token in the request header
 const protect = asyncHandler(async (req, res, next) => {
@@ -53,4 +53,4 @@ const admin = asyncHandler(async (req, res, next) => {
   }
 });
 
-module.exports = { protect, admin };
+export { protect, admin };

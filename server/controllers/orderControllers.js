@@ -1,15 +1,15 @@
-const asyncHandler = require('express-async-handler');
-const mongoose = require('mongoose');
-const RazorPay = require('razorpay');
+import asyncHandler from 'express-async-handler';
+import mongoose from 'mongoose';
+import RazorPay from 'razorpay';
 
 // Import Utils
-const { updateInventoryQuantity } = require('../utils/inventoryUtils');
+import { updateInventoryQuantity } from '../utils/inventoryUtils.js';
 
 // Import Schemas
-const Order = require('../schemas/orderSchema');
-const Pizza = require('../schemas/pizzaSchema');
-const User = require('../schemas/userSchema');
-const sendEmail = require('../middlewares/nodemailerMiddleware');
+import Order from '../schemas/orderSchema.js';
+import Pizza from '../schemas/pizzaSchema.js';
+import User from '../schemas/userSchema.js';
+import sendEmail from '../middlewares/nodemailerMiddleware.js';
 
 // Initialize Controllers
 
@@ -273,7 +273,7 @@ const deleteOrderById = asyncHandler(async (req, res) => {
 });
 
 // Export Controllers
-module.exports = {
+export {
   createRazorpayOrder,
   createOrder,
   getOrdersByUserId,

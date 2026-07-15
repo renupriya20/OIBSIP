@@ -112,4 +112,4 @@ const veggie = [
   },
 ];
 
-module.exports = { base, sauce, cheese, veggie };
+export { base, sauce, cheese, veggie };

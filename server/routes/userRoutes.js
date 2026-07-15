@@ -1,13 +1,13 @@
-const express = require('express');
+import express from 'express';
 
 // Initialize Express Router
 const router = express.Router();
 
 // Import Middlewares
-const { protect, admin } = require('../middlewares/authMiddlewares');
+import { protect, admin } from '../middlewares/authMiddlewares.js';
 
 // Import Controllers
-const {
+import {
   authUser,
   registerUser,
   verifyUser,
@@ -19,7 +19,7 @@ const {
   getUserById,
   updateUserById,
   deleteUserById,
-} = require('../controllers/userControllers');
+} from '../controllers/userControllers.js';
 
 // Initialize Routes
 
@@ -45,4 +45,4 @@ router
   .delete(protect, admin, deleteUserById);
 
 // Export Router
-module.exports = router;
+export default router;

@@ -1,15 +1,15 @@
-const bcrypt = require('bcryptjs');
-const emailValidator = require('email-validator');
-const asyncHandler = require('express-async-handler');
+import bcrypt from 'bcryptjs';
+import emailValidator from 'email-validator';
+import asyncHandler from 'express-async-handler';
 
 // Import Utils
-const generateToken = require('../utils/generateToken');
+import generateToken from '../utils/generateToken.js';
 
 // Import Middlewares
-const sendEmail = require('../middlewares/nodemailerMiddleware');
+import sendEmail from '../middlewares/nodemailerMiddleware.js';
 
 // Import Schema
-const Admin = require('../schemas/adminUserSchema');
+import Admin from '../schemas/adminUserSchema.js';
 
 // Initialize Controllers
 
@@ -344,7 +344,7 @@ const deleteAdminById = asyncHandler(async (req, res) => {
 });
 
 // Export Controllers
-module.exports = {
+export {
   authAdmin,
   registerAdmin,
   getAdminProfile,

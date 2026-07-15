@@ -1,18 +1,18 @@
-const mongoose = require('mongoose');
-const dotenv = require('dotenv');
-const colors = require('colors');
+import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+import colors from 'colors';
 
-const connectDb = require('./config/db');
+import connectDb from './config/db.js';
 
-const Admin = require('./schemas/adminUserSchema');
-const User = require('./schemas/userSchema');
-const Pizza = require('./schemas/pizzaSchema');
-const Order = require('./schemas/orderSchema');
-const { Base, Sauce, Cheese, Veggie } = require('./schemas/inventorySchema');
+import Admin from './schemas/adminUserSchema.js';
+import User from './schemas/userSchema.js';
+import Pizza from './schemas/pizzaSchema.js';
+import Order from './schemas/orderSchema.js';
+import { Base, Sauce, Cheese, Veggie } from './schemas/inventorySchema.js';
 
-const { users, admins } = require('./data/users');
-const pizzas = require('./data/pizzas');
-const { base, sauce, cheese, veggie } = require('./data/inventory');
+import { users, admins } from './data/users.js';
+import pizzas from './data/pizzas.js';
+import { base, sauce, cheese, veggie } from './data/inventory.js';
 
 dotenv.config();
 

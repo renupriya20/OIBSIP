@@ -1,9 +1,9 @@
-const asyncHandler = require('express-async-handler');
+import asyncHandler from 'express-async-handler';
 
 // Import Schema
-const Pizza = require('../schemas/pizzaSchema');
-const Admin = require('../schemas/adminUserSchema');
-const User = require('../schemas/userSchema');
+import Pizza from '../schemas/pizzaSchema.js';
+import Admin from '../schemas/adminUserSchema.js';
+import User from '../schemas/userSchema.js';
 
 // Initialize Controllers
 
@@ -216,7 +216,7 @@ const deletePizzaById = asyncHandler(async (req, res) => {
 });
 
 // Export Controllers
-module.exports = {
+export {
   getAllPizzas,
   getPizzaById,
   createPizza,
